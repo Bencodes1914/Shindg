@@ -51,6 +51,7 @@
 
 .main-content{
  padding: 40px;
+ min-height: 100vh;
 }
 
 .main-title {
