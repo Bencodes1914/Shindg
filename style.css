@@ -37,8 +37,12 @@
  border-radius: 5px;
  padding: 10px 20px 10px 40px;
  width: 250px;
- color: #fff;
+ color: white;
  font-size: 14px;
+}
+
+.search-input:hover{
+ outline:  #9b6dff solid 1px;
 }
 
 .search-icon {
