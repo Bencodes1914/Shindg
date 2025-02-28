@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
  initSlider('slider1', 3000);
- initSlider('slider2', 4000);
- initSlider('slider3', 5000);
+ initSlider('slider2', 3500);
+ initSlider('slider3', 4000);
  
  function initSlider(sliderId, interval) {
      const sliderContainer = document.getElementById(sliderId);
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
          currentIndex = index;
          slides[currentIndex].classList.add('active');
-         dots[currentIndex].classList.add('active');
      }
      
      function nextSlide() {
