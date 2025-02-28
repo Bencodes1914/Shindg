@@ -67,3 +67,17 @@ document.addEventListener('DOMContentLoaded', function() {
      startSlideshow();
  }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.search-input');
+    
+    searchInput.addEventListener('focus', function() {
+      this.classList.add('expanded');
+    });
+    
+    searchInput.addEventListener('blur', function() {
+      if (this.value === '') {
+        this.classList.remove('expanded');
+      }
+    });
+  });

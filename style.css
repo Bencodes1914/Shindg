@@ -38,11 +38,17 @@
  padding: 10px 20px 10px 40px;
  width: 250px;
  color: white;
+ outline: none;
  font-size: 14px;
 }
 
-.search-input:hover{
- outline:  #9b6dff solid 1px;
+.search-input.expanded{
+  width: 400px;
+}
+
+.search-input:focus {
+ border-color: #4d90fe;
+ box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
 }
 
 .search-icon {
