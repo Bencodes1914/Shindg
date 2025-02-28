@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search-input');
+    const searchContainer = document.querySelector('.search-container');
     
     searchInput.addEventListener('focus', function() {
       this.classList.add('expanded');
@@ -77,7 +78,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     searchInput.addEventListener('blur', function() {
       if (this.value === '') {
-        this.classList.remove('expanded');
+        setTimeout(() => {
+          this.classList.remove('expanded');
+        }, 250);
       }
+    });
+  
+    searchContainer.addEventListener('click', function() {
+      searchInput.focus();
     });
   });
