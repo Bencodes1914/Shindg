@@ -202,15 +202,17 @@
 
 .benefits-container {
  display: flex;
- flex-wrap: wrap;
+ flex-wrap: wrap-reverse;
  justify-content: center;
- gap: 50px;
+ gap: 10px;
  margin-top: 30px;
 }
 
 .benefit-item {
  max-width: 300px;
  text-align: center;
+ border-right: 2px solid rgb(37, 37, 37);
+ margin-left: 10px;
 }
 
 .benefit-icon > img {
@@ -389,6 +391,7 @@ footer {
 .footer-column {
  flex: 1;
  min-width: 200px;
+ margin-left: 10px;
 }
 
 .footer-column h3 {
@@ -406,12 +409,14 @@ footer {
 }
 
 .footer-column ul li a {
- color: #ccc;
+ color: white;
  transition: color 0.3s;
+ text-decoration: line-through;
 }
 
 .footer-column ul li a:hover {
- color: #fff;
+ color: white;
+ text-decoration: underline;
 }
 
 .footer-bottom {
